@@ -1,0 +1,786 @@
+20-Aug-2018 09:48:08.871 SEVERE [http-nio-80-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EXXO] threw exception [An exception occurred processing JSP page /fileLoader.jsp at line 6
+
+3:     String o = (String) session.getAttribute("id");
+4:     String g = (String) session.getAttribute("global_id");
+5:     String id = request.getParameter("id");
+6:     String list = ND.getList(request, o, g);
+7:     String rightMenu = ND.rightMenu;
+8:     String slogan = SLOGAN.getSlogan(request);
+9:     if (ND.redirect) {
+
+
+Stacktrace:] with root cause
+ org.postgresql.util.PSQLException: ERROR: more than one row returned by a subquery used as an expression
+  Where: SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+PL/pgSQL function isboss(integer,integer) line 1 at assignment
+SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2455)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2155)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:288)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:430)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:303)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:289)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:266)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:233)
+	at BEANS.FileLoader.getList(FileLoader.java:125)
+	at org.apache.jsp.fileLoader_jsp._jspService(fileLoader_jsp.java:142)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at Servlets.Logger.doFilter(Logger.java:217)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:591)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.authenticator.SingleSignOn.invoke(SingleSignOn.java:291)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1437)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+20-Aug-2018 11:07:12.406 SEVERE [http-nio-80-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EXXO] threw exception [An exception occurred processing JSP page /fileLoader.jsp at line 6
+
+3:     String o = (String) session.getAttribute("id");
+4:     String g = (String) session.getAttribute("global_id");
+5:     String id = request.getParameter("id");
+6:     String list = ND.getList(request, o, g);
+7:     String rightMenu = ND.rightMenu;
+8:     String slogan = SLOGAN.getSlogan(request);
+9:     if (ND.redirect) {
+
+
+Stacktrace:] with root cause
+ org.postgresql.util.PSQLException: ERROR: more than one row returned by a subquery used as an expression
+  Where: SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+PL/pgSQL function isboss(integer,integer) line 1 at assignment
+SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2455)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2155)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:288)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:430)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:303)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:289)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:266)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:233)
+	at BEANS.FileLoader.getList(FileLoader.java:125)
+	at org.apache.jsp.fileLoader_jsp._jspService(fileLoader_jsp.java:142)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at Servlets.Logger.doFilter(Logger.java:217)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:591)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.authenticator.SingleSignOn.invoke(SingleSignOn.java:291)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1437)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+20-Aug-2018 11:07:41.094 SEVERE [http-nio-80-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EXXO] threw exception [An exception occurred processing JSP page /fileLoader.jsp at line 6
+
+3:     String o = (String) session.getAttribute("id");
+4:     String g = (String) session.getAttribute("global_id");
+5:     String id = request.getParameter("id");
+6:     String list = ND.getList(request, o, g);
+7:     String rightMenu = ND.rightMenu;
+8:     String slogan = SLOGAN.getSlogan(request);
+9:     if (ND.redirect) {
+
+
+Stacktrace:] with root cause
+ org.postgresql.util.PSQLException: ERROR: more than one row returned by a subquery used as an expression
+  Where: SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+PL/pgSQL function isboss(integer,integer) line 1 at assignment
+SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2455)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2155)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:288)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:430)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:303)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:289)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:266)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:233)
+	at BEANS.FileLoader.getList(FileLoader.java:125)
+	at org.apache.jsp.fileLoader_jsp._jspService(fileLoader_jsp.java:142)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at Servlets.Logger.doFilter(Logger.java:217)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:591)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.authenticator.SingleSignOn.invoke(SingleSignOn.java:291)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1437)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+20-Aug-2018 11:09:08.236 SEVERE [http-nio-80-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EXXO] threw exception [An exception occurred processing JSP page /fileLoader.jsp at line 6
+
+3:     String o = (String) session.getAttribute("id");
+4:     String g = (String) session.getAttribute("global_id");
+5:     String id = request.getParameter("id");
+6:     String list = ND.getList(request, o, g);
+7:     String rightMenu = ND.rightMenu;
+8:     String slogan = SLOGAN.getSlogan(request);
+9:     if (ND.redirect) {
+
+
+Stacktrace:] with root cause
+ org.postgresql.util.PSQLException: ERROR: more than one row returned by a subquery used as an expression
+  Where: SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+PL/pgSQL function isboss(integer,integer) line 1 at assignment
+SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2455)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2155)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:288)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:430)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:303)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:289)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:266)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:233)
+	at BEANS.FileLoader.getList(FileLoader.java:125)
+	at org.apache.jsp.fileLoader_jsp._jspService(fileLoader_jsp.java:142)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at Servlets.Logger.doFilter(Logger.java:217)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:591)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.authenticator.SingleSignOn.invoke(SingleSignOn.java:291)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1437)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+20-Aug-2018 11:09:17.924 SEVERE [http-nio-80-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EXXO] threw exception [An exception occurred processing JSP page /fileLoader.jsp at line 6
+
+3:     String o = (String) session.getAttribute("id");
+4:     String g = (String) session.getAttribute("global_id");
+5:     String id = request.getParameter("id");
+6:     String list = ND.getList(request, o, g);
+7:     String rightMenu = ND.rightMenu;
+8:     String slogan = SLOGAN.getSlogan(request);
+9:     if (ND.redirect) {
+
+
+Stacktrace:] with root cause
+ org.postgresql.util.PSQLException: ERROR: more than one row returned by a subquery used as an expression
+  Where: SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+PL/pgSQL function isboss(integer,integer) line 1 at assignment
+SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2455)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2155)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:288)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:430)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:303)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:289)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:266)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:233)
+	at BEANS.FileLoader.getList(FileLoader.java:125)
+	at org.apache.jsp.fileLoader_jsp._jspService(fileLoader_jsp.java:142)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at Servlets.Logger.doFilter(Logger.java:217)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:591)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.authenticator.SingleSignOn.invoke(SingleSignOn.java:291)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1437)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+20-Aug-2018 11:38:58.619 SEVERE [http-nio-80-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EXXO] threw exception [An exception occurred processing JSP page /fileLoader.jsp at line 6
+
+3:     String o = (String) session.getAttribute("id");
+4:     String g = (String) session.getAttribute("global_id");
+5:     String id = request.getParameter("id");
+6:     String list = ND.getList(request, o, g);
+7:     String rightMenu = ND.rightMenu;
+8:     String slogan = SLOGAN.getSlogan(request);
+9:     if (ND.redirect) {
+
+
+Stacktrace:] with root cause
+ org.postgresql.util.PSQLException: ERROR: more than one row returned by a subquery used as an expression
+  Where: SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+PL/pgSQL function isboss(integer,integer) line 1 at assignment
+SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2455)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2155)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:288)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:430)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:303)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:289)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:266)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:233)
+	at BEANS.FileLoader.getList(FileLoader.java:125)
+	at org.apache.jsp.fileLoader_jsp._jspService(fileLoader_jsp.java:142)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at Servlets.Logger.doFilter(Logger.java:217)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:591)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.authenticator.SingleSignOn.invoke(SingleSignOn.java:291)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1437)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+20-Aug-2018 11:39:22.448 SEVERE [http-nio-80-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EXXO] threw exception [An exception occurred processing JSP page /fileLoader.jsp at line 6
+
+3:     String o = (String) session.getAttribute("id");
+4:     String g = (String) session.getAttribute("global_id");
+5:     String id = request.getParameter("id");
+6:     String list = ND.getList(request, o, g);
+7:     String rightMenu = ND.rightMenu;
+8:     String slogan = SLOGAN.getSlogan(request);
+9:     if (ND.redirect) {
+
+
+Stacktrace:] with root cause
+ org.postgresql.util.PSQLException: ERROR: more than one row returned by a subquery used as an expression
+  Where: SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+PL/pgSQL function isboss(integer,integer) line 1 at assignment
+SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2455)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2155)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:288)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:430)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:303)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:289)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:266)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:233)
+	at BEANS.FileLoader.getList(FileLoader.java:125)
+	at org.apache.jsp.fileLoader_jsp._jspService(fileLoader_jsp.java:142)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at Servlets.Logger.doFilter(Logger.java:217)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:591)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.authenticator.SingleSignOn.invoke(SingleSignOn.java:291)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1437)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+20-Aug-2018 11:40:45.903 SEVERE [http-nio-80-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EXXO] threw exception [An exception occurred processing JSP page /fileLoader.jsp at line 6
+
+3:     String o = (String) session.getAttribute("id");
+4:     String g = (String) session.getAttribute("global_id");
+5:     String id = request.getParameter("id");
+6:     String list = ND.getList(request, o, g);
+7:     String rightMenu = ND.rightMenu;
+8:     String slogan = SLOGAN.getSlogan(request);
+9:     if (ND.redirect) {
+
+
+Stacktrace:] with root cause
+ org.postgresql.util.PSQLException: ERROR: more than one row returned by a subquery used as an expression
+  Where: SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+PL/pgSQL function isboss(integer,integer) line 1 at assignment
+SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2455)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2155)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:288)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:430)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:303)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:289)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:266)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:233)
+	at BEANS.FileLoader.getList(FileLoader.java:125)
+	at org.apache.jsp.fileLoader_jsp._jspService(fileLoader_jsp.java:142)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at Servlets.Logger.doFilter(Logger.java:217)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:591)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.authenticator.SingleSignOn.invoke(SingleSignOn.java:291)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1437)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+20-Aug-2018 11:41:14.185 SEVERE [http-nio-80-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EXXO] threw exception [An exception occurred processing JSP page /fileLoader.jsp at line 6
+
+3:     String o = (String) session.getAttribute("id");
+4:     String g = (String) session.getAttribute("global_id");
+5:     String id = request.getParameter("id");
+6:     String list = ND.getList(request, o, g);
+7:     String rightMenu = ND.rightMenu;
+8:     String slogan = SLOGAN.getSlogan(request);
+9:     if (ND.redirect) {
+
+
+Stacktrace:] with root cause
+ org.postgresql.util.PSQLException: ERROR: more than one row returned by a subquery used as an expression
+  Where: SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+PL/pgSQL function isboss(integer,integer) line 1 at assignment
+SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2455)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2155)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:288)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:430)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:303)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:289)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:266)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:233)
+	at BEANS.FileLoader.getList(FileLoader.java:125)
+	at org.apache.jsp.fileLoader_jsp._jspService(fileLoader_jsp.java:142)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at Servlets.Logger.doFilter(Logger.java:217)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:591)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.authenticator.SingleSignOn.invoke(SingleSignOn.java:291)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1437)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+20-Aug-2018 11:58:56.489 SEVERE [http-nio-80-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EXXO] threw exception [An exception occurred processing JSP page /fileLoader.jsp at line 6
+
+3:     String o = (String) session.getAttribute("id");
+4:     String g = (String) session.getAttribute("global_id");
+5:     String id = request.getParameter("id");
+6:     String list = ND.getList(request, o, g);
+7:     String rightMenu = ND.rightMenu;
+8:     String slogan = SLOGAN.getSlogan(request);
+9:     if (ND.redirect) {
+
+
+Stacktrace:] with root cause
+ org.postgresql.util.PSQLException: ERROR: more than one row returned by a subquery used as an expression
+  Where: SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+PL/pgSQL function isboss(integer,integer) line 1 at assignment
+SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2455)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2155)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:288)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:430)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:303)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:289)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:266)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:233)
+	at BEANS.FileLoader.getList(FileLoader.java:125)
+	at org.apache.jsp.fileLoader_jsp._jspService(fileLoader_jsp.java:142)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at Servlets.Logger.doFilter(Logger.java:217)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:591)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.authenticator.SingleSignOn.invoke(SingleSignOn.java:291)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1437)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+20-Aug-2018 11:59:41.896 SEVERE [http-nio-80-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EXXO] threw exception [An exception occurred processing JSP page /fileLoader.jsp at line 6
+
+3:     String o = (String) session.getAttribute("id");
+4:     String g = (String) session.getAttribute("global_id");
+5:     String id = request.getParameter("id");
+6:     String list = ND.getList(request, o, g);
+7:     String rightMenu = ND.rightMenu;
+8:     String slogan = SLOGAN.getSlogan(request);
+9:     if (ND.redirect) {
+
+
+Stacktrace:] with root cause
+ org.postgresql.util.PSQLException: ERROR: more than one row returned by a subquery used as an expression
+  Where: SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+PL/pgSQL function isboss(integer,integer) line 1 at assignment
+SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2455)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2155)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:288)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:430)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:303)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:289)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:266)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:233)
+	at BEANS.FileLoader.getList(FileLoader.java:125)
+	at org.apache.jsp.fileLoader_jsp._jspService(fileLoader_jsp.java:142)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at Servlets.Logger.doFilter(Logger.java:217)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:591)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.authenticator.SingleSignOn.invoke(SingleSignOn.java:291)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1437)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+20-Aug-2018 12:00:06.522 SEVERE [http-nio-80-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EXXO] threw exception [An exception occurred processing JSP page /fileLoader.jsp at line 6
+
+3:     String o = (String) session.getAttribute("id");
+4:     String g = (String) session.getAttribute("global_id");
+5:     String id = request.getParameter("id");
+6:     String list = ND.getList(request, o, g);
+7:     String rightMenu = ND.rightMenu;
+8:     String slogan = SLOGAN.getSlogan(request);
+9:     if (ND.redirect) {
+
+
+Stacktrace:] with root cause
+ org.postgresql.util.PSQLException: ERROR: more than one row returned by a subquery used as an expression
+  Where: SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+PL/pgSQL function isboss(integer,integer) line 1 at assignment
+SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2455)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2155)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:288)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:430)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:303)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:289)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:266)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:233)
+	at BEANS.FileLoader.getList(FileLoader.java:125)
+	at org.apache.jsp.fileLoader_jsp._jspService(fileLoader_jsp.java:142)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at Servlets.Logger.doFilter(Logger.java:217)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:591)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.authenticator.SingleSignOn.invoke(SingleSignOn.java:291)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1437)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+20-Aug-2018 14:50:53.747 SEVERE [http-nio-80-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EXXO] threw exception [javax.servlet.ServletException: org.postgresql.util.PSQLException: ERROR: more than one row returned by a subquery used as an expression
+  Where: SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+PL/pgSQL function isboss(integer,integer) line 1 at assignment
+SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF] with root cause
+ org.postgresql.util.PSQLException: ERROR: more than one row returned by a subquery used as an expression
+  Where: SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+PL/pgSQL function isboss(integer,integer) line 1 at assignment
+SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2455)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2155)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:288)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:430)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:303)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:289)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:266)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:233)
+	at BEANS.FileLoader.getList(FileLoader.java:125)
+	at org.apache.jsp.fileLoader_jsp._jspService(fileLoader_jsp.java:142)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at Servlets.Logger.doFilter(Logger.java:217)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:591)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.authenticator.SingleSignOn.invoke(SingleSignOn.java:291)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1437)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+

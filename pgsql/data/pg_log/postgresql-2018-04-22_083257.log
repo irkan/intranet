@@ -1,0 +1,19 @@
+2018-04-22 08:32:57 GMT LOG:  database system was shut down at 2018-04-22 08:32:21 GMT
+2018-04-22 08:32:58 GMT LOG:  MultiXact member wraparound protections are now enabled
+2018-04-22 08:32:58 GMT LOG:  database system is ready to accept connections
+2018-04-22 08:32:58 GMT LOG:  autovacuum launcher started
+2018-04-22 09:32:12 GMT FATAL:  password authentication failed for user "postgres"
+2018-04-22 09:32:12 GMT DETAIL:  Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2018-04-22 09:34:46 GMT LOG:  received fast shutdown request
+2018-04-22 09:34:46 GMT LOG:  aborting any active transactions
+2018-04-22 09:34:46 GMT FATAL:  terminating connection due to administrator command
+2018-04-22 09:34:46 GMT FATAL:  terminating connection due to administrator command
+2018-04-22 09:34:46 GMT FATAL:  terminating connection due to administrator command
+2018-04-22 09:34:46 GMT FATAL:  terminating connection due to administrator command
+2018-04-22 09:34:46 GMT FATAL:  terminating connection due to administrator command
+2018-04-22 09:34:46 GMT FATAL:  terminating connection due to administrator command
+2018-04-22 09:34:46 GMT LOG:  autovacuum launcher shutting down
+2018-04-22 09:34:46 GMT ERROR:  canceling statement due to user request
+2018-04-22 09:34:46 GMT LOG:  autovacuum launcher shutting down
+2018-04-22 09:34:46 GMT LOG:  shutting down
+2018-04-22 09:34:46 GMT LOG:  database system is shut down

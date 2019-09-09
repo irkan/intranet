@@ -1,0 +1,52 @@
+2018-08-14 06:58:25 GMT ERROR:  insert or update on table "user_roles" violates foreign key constraint "user_roles_login_fkey"
+2018-08-14 06:58:25 GMT DETAIL:  Key (login)=(admin) is not present in table "users".
+2018-08-14 06:58:25 GMT STATEMENT:  INSERT INTO public.user_roles(login, role) VALUES ('admin'::character varying(250), 'blog_security'::character varying(250))
+2018-08-14 06:58:26 GMT ERROR:  insert or update on table "user_roles" violates foreign key constraint "user_roles_login_fkey"
+2018-08-14 06:58:26 GMT DETAIL:  Key (login)=(admin) is not present in table "users".
+2018-08-14 06:58:26 GMT STATEMENT:  INSERT INTO public.user_roles(login, role) VALUES ('admin'::character varying(250), 'blog_security'::character varying(250))
+2018-08-14 06:58:34 GMT ERROR:  insert or update on table "user_roles" violates foreign key constraint "user_roles_login_fkey"
+2018-08-14 06:58:34 GMT DETAIL:  Key (login)=(admin) is not present in table "users".
+2018-08-14 06:58:34 GMT STATEMENT:  INSERT INTO public.user_roles(login, role) VALUES ('admin'::character varying(250), 'blog_security'::character varying(250))
+2018-08-14 06:58:40 GMT ERROR:  insert or update on table "user_roles" violates foreign key constraint "user_roles_login_fkey"
+2018-08-14 06:58:40 GMT DETAIL:  Key (login)=(admin) is not present in table "users".
+2018-08-14 06:58:40 GMT STATEMENT:  INSERT INTO public.user_roles(login, role) VALUES ('admin'::character varying(250), ''::character varying(250))
+2018-08-14 06:59:08 GMT ERROR:  null value in column "pass" violates not-null constraint
+2018-08-14 06:59:08 GMT DETAIL:  Failing row contains (42, admin, null).
+2018-08-14 06:59:08 GMT STATEMENT:  INSERT INTO public.users(id, login) VALUES ('42'::integer, 'admin'::character varying(250))
+2018-08-14 06:59:42 GMT ERROR:  duplicate key value violates unique constraint "users_pkey"
+2018-08-14 06:59:42 GMT DETAIL:  Key (login)=(admin) already exists.
+2018-08-14 06:59:42 GMT STATEMENT:  INSERT INTO public.users(id, login, pass) VALUES ('42'::integer, 'admin'::character varying(250), '234234234'::character varying(50))
+2018-08-14 06:59:49 GMT ERROR:  duplicate key value violates unique constraint "users_pkey"
+2018-08-14 06:59:49 GMT DETAIL:  Key (login)=(admin) already exists.
+2018-08-14 06:59:49 GMT STATEMENT:  INSERT INTO public.users(id, login, pass) VALUES ('42'::integer, 'admin'::character varying(250), '234234234'::character varying(50))
+2018-08-14 06:59:55 GMT ERROR:  duplicate key value violates unique constraint "users_pkey"
+2018-08-14 06:59:55 GMT DETAIL:  Key (login)=(admin) already exists.
+2018-08-14 06:59:55 GMT STATEMENT:  INSERT INTO public.users(id, login, pass) VALUES ('42'::integer, 'admin'::character varying(250), '234234234'::character varying(50))
+2018-08-14 07:00:00 GMT ERROR:  duplicate key value violates unique constraint "users_pkey"
+2018-08-14 07:00:00 GMT DETAIL:  Key (login)=(admin) already exists.
+2018-08-14 07:00:00 GMT STATEMENT:  INSERT INTO public.users(id, login, pass) VALUES ('44'::integer, 'admin'::character varying(250), '234234234'::character varying(50))
+2018-08-14 07:13:52 GMT ERROR:  invalid input syntax for integer: "null" at character 160
+2018-08-14 07:13:52 GMT STATEMENT:  SELECT hours, minutes, name, long, id, extract(year from day) AS Year, extract(month from day) AS Month,extract(day from day) AS Day FROM events WHERE user_id='null' AND day=current_date ORDER BY hours, minutes
+2018-08-14 07:13:52 GMT LOG:  could not receive data from client: An established connection was aborted by the software in your host machine.
+	
+2018-08-14 07:13:53 GMT ERROR:  invalid input syntax for integer: "null" at character 337
+2018-08-14 07:13:53 GMT STATEMENT:  SELECT bloges.id, bloges.text, bloges.time, bloges.owner, employee.fio, bus, name, isBlogPermitted (dopusk_type, dopusk, null::Int) AS permitted, dopusk_type, is_blog_opend(bloges.global_id, null) AS opend, properTime(bloges.time) AS create FROM bloges, employee WHERE employee.id=bloges.owner AND NOT bloges.blocked  AND bloges.owner<>'null'   AND(isBlogPermitted (dopusk_type, dopusk, null::Int) OR owner=null)  ORDER BY time DESC LIMIT 28
+2018-08-14 07:13:53 GMT LOG:  could not receive data from client: An established connection was aborted by the software in your host machine.
+	
+2018-08-14 07:13:54 GMT LOG:  could not receive data from client: An established connection was aborted by the software in your host machine.
+	
+2018-08-14 07:13:59 GMT LOG:  could not receive data from client: An established connection was aborted by the software in your host machine.
+	
+2018-08-14 07:14:00 GMT ERROR:  invalid input syntax for integer: "null" at character 74
+2018-08-14 07:14:00 GMT STATEMENT:  SELECT id, name, file, fname FROM gallaries WHERE superior='1' AND owner='null' AND file=0 ORDER BY name LIMIT 51 OFFSET 0
+2018-08-14 07:14:13 GMT ERROR:  invalid input syntax for integer: "null" at character 74
+2018-08-14 07:14:13 GMT STATEMENT:  SELECT id, name, file, fname FROM gallaries WHERE superior='1' AND owner='null' AND file=0 ORDER BY name LIMIT 51 OFFSET 0
+2018-08-14 07:14:32 GMT ERROR:  insert or update on table "user_roles" violates foreign key constraint "user_roles_role_fkey"
+2018-08-14 07:14:32 GMT DETAIL:  Key (role)=() is not present in table "roles".
+2018-08-14 07:14:32 GMT STATEMENT:  INSERT INTO public.user_roles(login, role) VALUES ('admin'::character varying(250), ''::character varying(250))
+2018-08-14 07:14:37 GMT ERROR:  insert or update on table "user_roles" violates foreign key constraint "user_roles_role_fkey"
+2018-08-14 07:14:37 GMT DETAIL:  Key (role)=() is not present in table "roles".
+2018-08-14 07:14:37 GMT STATEMENT:  INSERT INTO public.user_roles(login, role) VALUES ('admin'::character varying(250), ''::character varying(250))
+2018-08-14 07:29:29 GMT ERROR:  canceling statement due to user request
+2018-08-14 07:29:29 GMT STATEMENT:  SELECT * FROM public.file_store
+	 ORDER BY id ASC LIMIT 100

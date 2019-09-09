@@ -1,0 +1,2 @@
+13-Sep-2018 15:13:46.115 WARNING [http-nio-80-exec-120] com.sun.faces.context.SessionMap.put JSF1063: WARNING! Setting non-serializable attribute value into HttpSession (key: groupListBean, value class: BEANS.groupListBean).
+13-Sep-2018 15:15:10.226 WARNING [http-nio-80-exec-80] com.sun.faces.context.SessionMap.put JSF1063: WARNING! Setting non-serializable attribute value into HttpSession (key: groupEditBean, value class: BEANS.groupEditBean).

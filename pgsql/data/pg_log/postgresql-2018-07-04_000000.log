@@ -1,0 +1,34 @@
+2018-07-04 06:54:16 GMT FATAL:  password authentication failed for user "irkan"
+2018-07-04 06:54:16 GMT DETAIL:  Connection matched pg_hba.conf line 82: "host    all             all             ::1/128                 md5"
+2018-07-04 08:35:11 GMT ERROR:  null value in column "login" violates not-null constraint
+2018-07-04 08:35:11 GMT DETAIL:  Failing row contains (426, null, null).
+2018-07-04 08:35:11 GMT STATEMENT:  INSERT INTO public.users(id) VALUES ('426'::integer)
+2018-07-04 08:35:25 GMT ERROR:  null value in column "pass" violates not-null constraint
+2018-07-04 08:35:25 GMT DETAIL:  Failing row contains (426, irkan, null).
+2018-07-04 08:35:25 GMT STATEMENT:  INSERT INTO public.users(id, login) VALUES ('426'::integer, 'irkan'::character varying(250))
+2018-07-04 08:35:28 GMT ERROR:  null value in column "pass" violates not-null constraint
+2018-07-04 08:35:28 GMT DETAIL:  Failing row contains (426, irkan, null).
+2018-07-04 08:35:28 GMT STATEMENT:  INSERT INTO public.users(id, login) VALUES ('426'::integer, 'irkan'::character varying(250))
+2018-07-04 08:35:38 GMT ERROR:  invalid input syntax for integer: "96e79218965eb72c92a549dd5a330112" at character 38
+2018-07-04 08:35:38 GMT STATEMENT:  INSERT INTO public.users(id) VALUES ('96e79218965eb72c92a549dd5a330112'::integer)
+2018-07-04 08:35:46 GMT ERROR:  null value in column "login" violates not-null constraint
+2018-07-04 08:35:46 GMT DETAIL:  Failing row contains (2, null, null).
+2018-07-04 08:35:46 GMT STATEMENT:  INSERT INTO public.users(id) VALUES ('2'::integer)
+2018-07-04 08:35:50 GMT ERROR:  null value in column "login" violates not-null constraint
+2018-07-04 08:35:50 GMT DETAIL:  Failing row contains (2, null, null).
+2018-07-04 08:35:50 GMT STATEMENT:  INSERT INTO public.users(id) VALUES ('2'::integer)
+2018-07-04 08:35:56 GMT ERROR:  null value in column "login" violates not-null constraint
+2018-07-04 08:35:56 GMT DETAIL:  Failing row contains (2, null, null).
+2018-07-04 08:35:56 GMT STATEMENT:  INSERT INTO public.users(id) VALUES ('2'::integer)
+2018-07-04 08:36:53 GMT ERROR:  null value in column "role" violates not-null constraint
+2018-07-04 08:36:53 GMT DETAIL:  Failing row contains (irkan, null).
+2018-07-04 08:36:53 GMT STATEMENT:  INSERT INTO public.user_roles(login) VALUES ('irkan'::character varying(250))
+2018-07-04 08:41:55 GMT ERROR:  null value in column "role" violates not-null constraint
+2018-07-04 08:41:55 GMT DETAIL:  Failing row contains (irkan, null).
+2018-07-04 08:41:55 GMT STATEMENT:  INSERT INTO public.user_roles(login) VALUES ('irkan'::character varying(250))
+2018-07-04 08:46:52 GMT ERROR:  duplicate key value violates unique constraint "user_roles_pkey"
+2018-07-04 08:46:52 GMT DETAIL:  Key (login, role)=(irkan, in_files_editor) already exists.
+2018-07-04 08:46:52 GMT STATEMENT:  INSERT INTO public.user_roles(login, role) VALUES ('irkan'::character varying(250), 'in_files_editor'::character varying(250))
+2018-07-04 08:47:07 GMT ERROR:  null value in column "role" violates not-null constraint
+2018-07-04 08:47:07 GMT DETAIL:  Failing row contains (irkan, null).
+2018-07-04 08:47:07 GMT STATEMENT:  INSERT INTO public.user_roles(login) VALUES ('irkan'::character varying(250))

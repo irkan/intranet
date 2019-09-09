@@ -1,0 +1,7 @@
+2018-12-18 05:50:30 GMT LOG:  database system was interrupted; last known up at 2018-12-18 05:49:58 GMT
+2018-12-18 05:50:30 GMT LOG:  database system was not properly shut down; automatic recovery in progress
+2018-12-18 05:50:30 GMT LOG:  invalid record length at 0/129249D0
+2018-12-18 05:50:30 GMT LOG:  redo is not required
+2018-12-18 05:50:30 GMT LOG:  MultiXact member wraparound protections are now enabled
+2018-12-18 05:50:30 GMT LOG:  database system is ready to accept connections
+2018-12-18 05:50:31 GMT LOG:  autovacuum launcher started

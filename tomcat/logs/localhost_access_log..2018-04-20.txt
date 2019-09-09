@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [20/Apr/2018:18:00:29 +0400] "GET /EXXO/ HTTP/1.1" 200 485
+0:0:0:0:0:0:0:1 - - [20/Apr/2018:18:00:29 +0400] "GET /EXXO/javax.faces.resource/theme.css.xhtml?ln=primefaces-aristo HTTP/1.1" 200 485
+0:0:0:0:0:0:0:1 - - [20/Apr/2018:18:00:29 +0400] "GET /favicon.ico HTTP/1.1" 404 1008
+0:0:0:0:0:0:0:1 - - [20/Apr/2018:18:00:30 +0400] "GET /WELLCOME/ HTTP/1.1" 200 3278
+0:0:0:0:0:0:0:1 - - [20/Apr/2018:18:00:30 +0400] "GET /WELLCOME/logo.png HTTP/1.1" 304 -

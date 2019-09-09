@@ -1,0 +1,186 @@
+2018-08-20 05:48:08 GMT ERROR:  more than one row returned by a subquery used as an expression
+2018-08-20 05:48:08 GMT CONTEXT:  SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+	PL/pgSQL function isboss(integer,integer) line 1 at assignment
+	SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+	PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+2018-08-20 05:48:08 GMT STATEMENT:  SELECT files.id, files.owner, files.name, get_fio(files.owner), files.fname, files.descr, isBlogPermitted (dopusk_type, dopusk, 724::Int) AS permitted, type, properTime(files.created) AS create, files.superior AS superior,  catalog_name(superior),dopusk_type,sizeico, dopusk, vers, properTime(files_vers.created) AS versCreated, ver_id, status, step, files.id = files.copy AS isCopy, copy,isSignable(files.id,dopusk_type,dopusk,owner) AS isSignable, isSignedBy(ver_id,46) AS isSigned, author, get_fio(author) AS author_fio, author is not null AS has_author, isHead(files.owner) AS isHead FROM files, files_vers WHERE file='1' AND files.copy=files_vers.id  AND files.id='253'  ORDER BY files_vers.created DESC LIMIT 1
+2018-08-20 07:07:12 GMT ERROR:  more than one row returned by a subquery used as an expression
+2018-08-20 07:07:12 GMT CONTEXT:  SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+	PL/pgSQL function isboss(integer,integer) line 1 at assignment
+	SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+	PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+2018-08-20 07:07:12 GMT STATEMENT:  SELECT files.id, files.owner, files.name, get_fio(files.owner), files.fname, files.descr, isBlogPermitted (dopusk_type, dopusk, 744::Int) AS permitted, type, properTime(files.created) AS create, files.superior AS superior,  catalog_name(superior),dopusk_type,sizeico, dopusk, vers, properTime(files_vers.created) AS versCreated, ver_id, status, step, files.id = files.copy AS isCopy, copy,isSignable(files.id,dopusk_type,dopusk,owner) AS isSignable, isSignedBy(ver_id,49) AS isSigned, author, get_fio(author) AS author_fio, author is not null AS has_author, isHead(files.owner) AS isHead FROM files, files_vers WHERE file='1' AND files.copy=files_vers.id  AND files.id='270'  ORDER BY files_vers.created DESC LIMIT 1
+2018-08-20 07:07:41 GMT ERROR:  more than one row returned by a subquery used as an expression
+2018-08-20 07:07:41 GMT CONTEXT:  SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+	PL/pgSQL function isboss(integer,integer) line 1 at assignment
+	SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+	PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+2018-08-20 07:07:41 GMT STATEMENT:  SELECT files.id, files.owner, files.name, get_fio(files.owner), files.fname, files.descr, isBlogPermitted (dopusk_type, dopusk, 744::Int) AS permitted, type, properTime(files.created) AS create, files.superior AS superior,  catalog_name(superior),dopusk_type,sizeico, dopusk, vers, properTime(files_vers.created) AS versCreated, ver_id, status, step, files.id = files.copy AS isCopy, copy,isSignable(files.id,dopusk_type,dopusk,owner) AS isSignable, isSignedBy(ver_id,49) AS isSigned, author, get_fio(author) AS author_fio, author is not null AS has_author, isHead(files.owner) AS isHead FROM files, files_vers WHERE file='1' AND files.copy=files_vers.id  AND files.id='270'  ORDER BY files_vers.created DESC LIMIT 1
+2018-08-20 07:09:08 GMT ERROR:  more than one row returned by a subquery used as an expression
+2018-08-20 07:09:08 GMT CONTEXT:  SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+	PL/pgSQL function isboss(integer,integer) line 1 at assignment
+	SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+	PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+2018-08-20 07:09:08 GMT STATEMENT:  SELECT files.id, files.owner, files.name, get_fio(files.owner), files.fname, files.descr, isBlogPermitted (dopusk_type, dopusk, 744::Int) AS permitted, type, properTime(files.created) AS create, files.superior AS superior,  catalog_name(superior),dopusk_type,sizeico, dopusk, vers, properTime(files_vers.created) AS versCreated, ver_id, status, step, files.id = files.copy AS isCopy, copy,isSignable(files.id,dopusk_type,dopusk,owner) AS isSignable, isSignedBy(ver_id,49) AS isSigned, author, get_fio(author) AS author_fio, author is not null AS has_author, isHead(files.owner) AS isHead FROM files, files_vers WHERE file='1' AND files.copy=files_vers.id  AND files.id='271'  ORDER BY files_vers.created DESC LIMIT 1
+2018-08-20 07:09:17 GMT ERROR:  more than one row returned by a subquery used as an expression
+2018-08-20 07:09:17 GMT CONTEXT:  SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+	PL/pgSQL function isboss(integer,integer) line 1 at assignment
+	SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+	PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+2018-08-20 07:09:17 GMT STATEMENT:  SELECT files.id, files.owner, files.name, get_fio(files.owner), files.fname, files.descr, isBlogPermitted (dopusk_type, dopusk, 744::Int) AS permitted, type, properTime(files.created) AS create, files.superior AS superior,  catalog_name(superior),dopusk_type,sizeico, dopusk, vers, properTime(files_vers.created) AS versCreated, ver_id, status, step, files.id = files.copy AS isCopy, copy,isSignable(files.id,dopusk_type,dopusk,owner) AS isSignable, isSignedBy(ver_id,49) AS isSigned, author, get_fio(author) AS author_fio, author is not null AS has_author, isHead(files.owner) AS isHead FROM files, files_vers WHERE file='1' AND files.copy=files_vers.id  AND files.id='271'  ORDER BY files_vers.created DESC LIMIT 1
+2018-08-20 07:38:58 GMT ERROR:  more than one row returned by a subquery used as an expression
+2018-08-20 07:38:58 GMT CONTEXT:  SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+	PL/pgSQL function isboss(integer,integer) line 1 at assignment
+	SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+	PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+2018-08-20 07:38:58 GMT STATEMENT:  SELECT files.id, files.owner, files.name, get_fio(files.owner), files.fname, files.descr, isBlogPermitted (dopusk_type, dopusk, 724::Int) AS permitted, type, properTime(files.created) AS create, files.superior AS superior,  catalog_name(superior),dopusk_type,sizeico, dopusk, vers, properTime(files_vers.created) AS versCreated, ver_id, status, step, files.id = files.copy AS isCopy, copy,isSignable(files.id,dopusk_type,dopusk,owner) AS isSignable, isSignedBy(ver_id,46) AS isSigned, author, get_fio(author) AS author_fio, author is not null AS has_author, isHead(files.owner) AS isHead FROM files, files_vers WHERE file='1' AND files.copy=files_vers.id  AND files.id='272'  ORDER BY files_vers.created DESC LIMIT 1
+2018-08-20 07:39:22 GMT ERROR:  more than one row returned by a subquery used as an expression
+2018-08-20 07:39:22 GMT CONTEXT:  SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+	PL/pgSQL function isboss(integer,integer) line 1 at assignment
+	SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+	PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+2018-08-20 07:39:22 GMT STATEMENT:  SELECT files.id, files.owner, files.name, get_fio(files.owner), files.fname, files.descr, isBlogPermitted (dopusk_type, dopusk, 724::Int) AS permitted, type, properTime(files.created) AS create, files.superior AS superior,  catalog_name(superior),dopusk_type,sizeico, dopusk, vers, properTime(files_vers.created) AS versCreated, ver_id, status, step, files.id = files.copy AS isCopy, copy,isSignable(files.id,dopusk_type,dopusk,owner) AS isSignable, isSignedBy(ver_id,46) AS isSigned, author, get_fio(author) AS author_fio, author is not null AS has_author, isHead(files.owner) AS isHead FROM files, files_vers WHERE file='1' AND files.copy=files_vers.id  AND files.id='272'  ORDER BY files_vers.created DESC LIMIT 1
+2018-08-20 07:40:45 GMT ERROR:  more than one row returned by a subquery used as an expression
+2018-08-20 07:40:45 GMT CONTEXT:  SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+	PL/pgSQL function isboss(integer,integer) line 1 at assignment
+	SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+	PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+2018-08-20 07:40:45 GMT STATEMENT:  SELECT files.id, files.owner, files.name, get_fio(files.owner), files.fname, files.descr, isBlogPermitted (dopusk_type, dopusk, 724::Int) AS permitted, type, properTime(files.created) AS create, files.superior AS superior,  catalog_name(superior),dopusk_type,sizeico, dopusk, vers, properTime(files_vers.created) AS versCreated, ver_id, status, step, files.id = files.copy AS isCopy, copy,isSignable(files.id,dopusk_type,dopusk,owner) AS isSignable, isSignedBy(ver_id,46) AS isSigned, author, get_fio(author) AS author_fio, author is not null AS has_author, isHead(files.owner) AS isHead FROM files, files_vers WHERE file='1' AND files.copy=files_vers.id  AND files.id='272'  ORDER BY files_vers.created DESC LIMIT 1
+2018-08-20 07:41:14 GMT ERROR:  more than one row returned by a subquery used as an expression
+2018-08-20 07:41:14 GMT CONTEXT:  SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+	PL/pgSQL function isboss(integer,integer) line 1 at assignment
+	SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+	PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+2018-08-20 07:41:14 GMT STATEMENT:  SELECT files.id, files.owner, files.name, get_fio(files.owner), files.fname, files.descr, isBlogPermitted (dopusk_type, dopusk, 724::Int) AS permitted, type, properTime(files.created) AS create, files.superior AS superior,  catalog_name(superior),dopusk_type,sizeico, dopusk, vers, properTime(files_vers.created) AS versCreated, ver_id, status, step, files.id = files.copy AS isCopy, copy,isSignable(files.id,dopusk_type,dopusk,owner) AS isSignable, isSignedBy(ver_id,46) AS isSigned, author, get_fio(author) AS author_fio, author is not null AS has_author, isHead(files.owner) AS isHead FROM files, files_vers WHERE file='1' AND files.copy=files_vers.id  AND files.id='273'  ORDER BY files_vers.created DESC LIMIT 1
+2018-08-20 07:58:56 GMT ERROR:  more than one row returned by a subquery used as an expression
+2018-08-20 07:58:56 GMT CONTEXT:  SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+	PL/pgSQL function isboss(integer,integer) line 1 at assignment
+	SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+	PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+2018-08-20 07:58:56 GMT STATEMENT:  SELECT files.id, files.owner, files.name, get_fio(files.owner), files.fname, files.descr, isBlogPermitted (dopusk_type, dopusk, 724::Int) AS permitted, type, properTime(files.created) AS create, files.superior AS superior,  catalog_name(superior),dopusk_type,sizeico, dopusk, vers, properTime(files_vers.created) AS versCreated, ver_id, status, step, files.id = files.copy AS isCopy, copy,isSignable(files.id,dopusk_type,dopusk,owner) AS isSignable, isSignedBy(ver_id,46) AS isSigned, author, get_fio(author) AS author_fio, author is not null AS has_author, isHead(files.owner) AS isHead FROM files, files_vers WHERE file='1' AND files.copy=files_vers.id  AND files.id='272'  ORDER BY files_vers.created DESC LIMIT 1
+2018-08-20 07:59:41 GMT ERROR:  more than one row returned by a subquery used as an expression
+2018-08-20 07:59:41 GMT CONTEXT:  SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+	PL/pgSQL function isboss(integer,integer) line 1 at assignment
+	SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+	PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+2018-08-20 07:59:41 GMT STATEMENT:  SELECT files.id, files.owner, files.name, get_fio(files.owner), files.fname, files.descr, isBlogPermitted (dopusk_type, dopusk, 426::Int) AS permitted, type, properTime(files.created) AS create, files.superior AS superior,  catalog_name(superior),dopusk_type,sizeico, dopusk, vers, properTime(files_vers.created) AS versCreated, ver_id, status, step, files.id = files.copy AS isCopy, copy,isSignable(files.id,dopusk_type,dopusk,owner) AS isSignable, isSignedBy(ver_id,426) AS isSigned, author, get_fio(author) AS author_fio, author is not null AS has_author, isHead(files.owner) AS isHead FROM files, files_vers WHERE file='1' AND files.copy=files_vers.id  AND files.id='273'  ORDER BY files_vers.created DESC LIMIT 1
+2018-08-20 08:00:06 GMT ERROR:  more than one row returned by a subquery used as an expression
+2018-08-20 08:00:06 GMT CONTEXT:  SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+	PL/pgSQL function isboss(integer,integer) line 1 at assignment
+	SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+	PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+2018-08-20 08:00:06 GMT STATEMENT:  SELECT files.id, files.owner, files.name, get_fio(files.owner), files.fname, files.descr, isBlogPermitted (dopusk_type, dopusk, 426::Int) AS permitted, type, properTime(files.created) AS create, files.superior AS superior,  catalog_name(superior),dopusk_type,sizeico, dopusk, vers, properTime(files_vers.created) AS versCreated, ver_id, status, step, files.id = files.copy AS isCopy, copy,isSignable(files.id,dopusk_type,dopusk,owner) AS isSignable, isSignedBy(ver_id,426) AS isSigned, author, get_fio(author) AS author_fio, author is not null AS has_author, isHead(files.owner) AS isHead FROM files, files_vers WHERE file='1' AND files.copy=files_vers.id  AND files.id='273'  ORDER BY files_vers.created DESC LIMIT 1
+2018-08-20 08:04:56 GMT ERROR:  column "u" does not exist at character 55
+2018-08-20 08:04:56 GMT STATEMENT:  SELECT (SELECT id FROM employee WHERE head=1 AND unit=u);
+2018-08-20 08:05:18 GMT ERROR:  invalid input syntax for integer: "u" at character 55
+2018-08-20 08:05:18 GMT STATEMENT:  SELECT (SELECT id FROM employee WHERE head=1 AND unit='u');
+2018-08-20 08:05:19 GMT ERROR:  invalid input syntax for integer: "u" at character 55
+2018-08-20 08:05:19 GMT STATEMENT:  SELECT (SELECT id FROM employee WHERE head=1 AND unit='u');
+2018-08-20 08:05:27 GMT ERROR:  column "u" does not exist at character 55
+2018-08-20 08:05:27 GMT STATEMENT:  SELECT (SELECT id FROM employee WHERE head=1 AND unit=u);
+2018-08-20 08:41:41 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 08:42:56 GMT ERROR:  syntax error at or near "OR" at character 187
+2018-08-20 08:42:56 GMT STATEMENT:  EXPLAIN (ANALYZE off, VERBOSE off, COSTS on, BUFFERS off, TIMING off )-- Function: public.jornalcsv(character varying)
+	
+	-- DROP FUNCTION public.jornalcsv(character varying);
+	
+	CREATE OR REPLACE FUNCTION public.jornalcsv(i character varying)
+	  RETURNS character varying AS
+	$BODY$ DECLARE list varchar; r RECORD; stat varchar; t varchar; BEGIN list:=concat_ws(E'	','Название сервиса', 'Время заявки','Время последних изменений статуса','номер заявки','Текст' , 'Статус' ,'Ответ','Комментарий', 'Исполнитель', 'Тип сервиса')||E'
+	
+	
+	
+	
+	
+	'; FOR r IN SELECT timeEnter, timeupd, customer, pid, text, status, why, pjornal.comment, process.name AS name, process.owner, employee.fio AS fio, process.type AS tip FROM pjornal, process, employee WHERE pjornal.customer=i::Int AND pjornal.pid=process.id AND employee.id=process.owner ORDER BY status, timeEnter DESC LOOP IF r.status = 0 THEN stat:='не открыто'; ELSIF r.status = 1 THEN stat:='открыто'; ELSIF r.status = 2 THEN stat:='решение принято'; ELSIF r.status = 3 THEN stat:='отказ'; ELSE stat:='вопрос закрыт'; END IF; IF r.tip = 'simple' THEN t:= 'Открыто-сделано'; ELSIF r.tip = 'desideIsDone' THEN t:= 'Решено-сделано'; ELSIF r.tip = 'DoneIsDone' THEN t:= 'Выполнено-сделано'; ELSE t:= 'Отвечено-сделано'; END IF; list:=list||concat_ws(E'	',r.name, concat('',to_char(r.timeEnter, 'DD.MM.YYYY HH24:MI:SS')), concat('',to_char(r.timeupd,'DD.MM.YYYY HH24:MI:SS')),concat('',r.pid),concat('"',replace(r.text,'<br>', '') ,'"'), stat ,concat('"',replace(r.why,'<br>', ''),'"'),concat('"',replace(r.comment,'<br>', ''),'"'), r.fio, t)||E'
+	
+	
+	
+	
+	
+	'; END LOOP; RETURN list; END; $BODY$
+	  LANGUAGE plpgsql VOLATILE
+	  COST 100;
+	ALTER FUNCTION public.jornalcsv(character varying)
+	  OWNER TO exxo;
+2018-08-20 08:42:58 GMT ERROR:  syntax error at or near "OR" at character 187
+2018-08-20 08:42:58 GMT STATEMENT:  EXPLAIN (ANALYZE off, VERBOSE off, COSTS on, BUFFERS off, TIMING off )-- Function: public.jornalcsv(character varying)
+	
+	-- DROP FUNCTION public.jornalcsv(character varying);
+	
+	CREATE OR REPLACE FUNCTION public.jornalcsv(i character varying)
+	  RETURNS character varying AS
+	$BODY$ DECLARE list varchar; r RECORD; stat varchar; t varchar; BEGIN list:=concat_ws(E'	','Название сервиса', 'Время заявки','Время последних изменений статуса','номер заявки','Текст' , 'Статус' ,'Ответ','Комментарий', 'Исполнитель', 'Тип сервиса')||E'
+	
+	
+	
+	
+	
+	'; FOR r IN SELECT timeEnter, timeupd, customer, pid, text, status, why, pjornal.comment, process.name AS name, process.owner, employee.fio AS fio, process.type AS tip FROM pjornal, process, employee WHERE pjornal.customer=i::Int AND pjornal.pid=process.id AND employee.id=process.owner ORDER BY status, timeEnter DESC LOOP IF r.status = 0 THEN stat:='не открыто'; ELSIF r.status = 1 THEN stat:='открыто'; ELSIF r.status = 2 THEN stat:='решение принято'; ELSIF r.status = 3 THEN stat:='отказ'; ELSE stat:='вопрос закрыт'; END IF; IF r.tip = 'simple' THEN t:= 'Открыто-сделано'; ELSIF r.tip = 'desideIsDone' THEN t:= 'Решено-сделано'; ELSIF r.tip = 'DoneIsDone' THEN t:= 'Выполнено-сделано'; ELSE t:= 'Отвечено-сделано'; END IF; list:=list||concat_ws(E'	',r.name, concat('',to_char(r.timeEnter, 'DD.MM.YYYY HH24:MI:SS')), concat('',to_char(r.timeupd,'DD.MM.YYYY HH24:MI:SS')),concat('',r.pid),concat('"',replace(r.text,'<br>', '') ,'"'), stat ,concat('"',replace(r.why,'<br>', ''),'"'),concat('"',replace(r.comment,'<br>', ''),'"'), r.fio, t)||E'
+	
+	
+	
+	
+	
+	'; END LOOP; RETURN list; END; $BODY$
+	  LANGUAGE plpgsql VOLATILE
+	  COST 100;
+	ALTER FUNCTION public.jornalcsv(character varying)
+	  OWNER TO exxo;
+2018-08-20 08:42:58 GMT ERROR:  syntax error at or near "OR" at character 187
+2018-08-20 08:42:58 GMT STATEMENT:  EXPLAIN (ANALYZE off, VERBOSE off, COSTS on, BUFFERS off, TIMING off )-- Function: public.jornalcsv(character varying)
+	
+	-- DROP FUNCTION public.jornalcsv(character varying);
+	
+	CREATE OR REPLACE FUNCTION public.jornalcsv(i character varying)
+	  RETURNS character varying AS
+	$BODY$ DECLARE list varchar; r RECORD; stat varchar; t varchar; BEGIN list:=concat_ws(E'	','Название сервиса', 'Время заявки','Время последних изменений статуса','номер заявки','Текст' , 'Статус' ,'Ответ','Комментарий', 'Исполнитель', 'Тип сервиса')||E'
+	
+	
+	
+	
+	
+	'; FOR r IN SELECT timeEnter, timeupd, customer, pid, text, status, why, pjornal.comment, process.name AS name, process.owner, employee.fio AS fio, process.type AS tip FROM pjornal, process, employee WHERE pjornal.customer=i::Int AND pjornal.pid=process.id AND employee.id=process.owner ORDER BY status, timeEnter DESC LOOP IF r.status = 0 THEN stat:='не открыто'; ELSIF r.status = 1 THEN stat:='открыто'; ELSIF r.status = 2 THEN stat:='решение принято'; ELSIF r.status = 3 THEN stat:='отказ'; ELSE stat:='вопрос закрыт'; END IF; IF r.tip = 'simple' THEN t:= 'Открыто-сделано'; ELSIF r.tip = 'desideIsDone' THEN t:= 'Решено-сделано'; ELSIF r.tip = 'DoneIsDone' THEN t:= 'Выполнено-сделано'; ELSE t:= 'Отвечено-сделано'; END IF; list:=list||concat_ws(E'	',r.name, concat('',to_char(r.timeEnter, 'DD.MM.YYYY HH24:MI:SS')), concat('',to_char(r.timeupd,'DD.MM.YYYY HH24:MI:SS')),concat('',r.pid),concat('"',replace(r.text,'<br>', '') ,'"'), stat ,concat('"',replace(r.why,'<br>', ''),'"'),concat('"',replace(r.comment,'<br>', ''),'"'), r.fio, t)||E'
+	
+	
+	
+	
+	
+	'; END LOOP; RETURN list; END; $BODY$
+	  LANGUAGE plpgsql VOLATILE
+	  COST 100;
+	ALTER FUNCTION public.jornalcsv(character varying)
+	  OWNER TO exxo;
+2018-08-20 08:46:37 GMT LOG:  received SIGHUP, reloading configuration files
+2018-08-20 08:46:46 GMT LOG:  received SIGHUP, reloading configuration files
+2018-08-20 08:51:18 GMT LOG:  received SIGHUP, reloading configuration files
+2018-08-20 08:51:20 GMT LOG:  received SIGHUP, reloading configuration files
+2018-08-20 09:00:24 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 09:00:24 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 09:00:24 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 09:00:24 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 09:00:24 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 09:00:24 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 09:00:24 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 09:00:24 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 09:00:24 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 09:00:24 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 09:00:24 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 09:00:24 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 09:00:24 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 09:00:24 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	

@@ -1,0 +1,469 @@
+2018-08-13 11:43:54 GMT LOG:  database system was interrupted; last known up at 2018-08-13 11:41:04 GMT
+2018-08-13 11:43:54 GMT LOG:  database system was not properly shut down; automatic recovery in progress
+2018-08-13 11:43:54 GMT LOG:  invalid record length at 0/EDC5500
+2018-08-13 11:43:54 GMT LOG:  redo is not required
+2018-08-13 11:43:54 GMT LOG:  MultiXact member wraparound protections are now enabled
+2018-08-13 11:43:54 GMT LOG:  database system is ready to accept connections
+2018-08-13 11:43:54 GMT LOG:  autovacuum launcher started
+2018-08-13 12:40:40 GMT ERROR:  syntax error at end of input at character 310
+2018-08-13 12:40:40 GMT STATEMENT:  UPDATE public.menu SET menu='<div class="yui3-menu-content" id="yui3-3-1-0-1-13590355104508150" role="presentation" style="height: auto;">
+	<ul class="first-of-type" id="topUl" role="presentation">
+	<li class="yui3-menuitem" id="yui3-3-1-0-1-13590355104508217" role="presentation"><a tabindex="0'::text WHERE 
+2018-08-13 12:52:26 GMT ERROR:  syntax error at or near "yui3" at character 45
+2018-08-13 12:52:26 GMT STATEMENT:  UPDATE public.menu
+	   SET menu="<div class="yui3-menu-content" id="yui3-3-1-0-1-13590355104508150" role="presentation" style="height: auto;">
+	<ul class="first-of-type" id="topUl" role="presentation">
+	<li class="yui3-menuitem" id="yui3-3-1-0-1-13590355104508217" role="presentation"><a tabindex="0"
+	                                                                                     class="yui3-menuitem-content"
+	                                                                                     id="yui3-3-1-0-1-1356080180031135"
+	                                                                                     role="menuitem"
+	                                                                                     href="?id=2">Əsas səhifə</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="yui3-menuitem item-menu item" id="aui_3_7_3_1_857" role="presentation"><a tabindex="-1"
+	                                                                                     class="yui3-menu-label yui3-menuitem-content"
+	                                                                                     id="yui3-3-1-0-1-135608018003563"
+	                                                                                     role="menuitem"
+	                                                                                     aria-haspopup="true"
+	                                                                                     aria-controls="aui_3_7_3_1_108"
+	                                                                                     style="font-weight: bold;"
+	                                                                                     href="http://ticket.azinsurance.az" target="_blank">Sorğu yarat</a>
+	    <div class="yui3-menu yui3-menu-hidden" id="impl2" role="menu" aria-hidden="true"
+	         aria-labelledby="ms__id83863">
+	        <div class="yui3-menu-content" role="menuitem">
+	            <ul class="first-of-type" role="menuitem">
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      id="yui3-3-1-0-1-1356101534485502"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="http://ticket.azinsurance.az/agent" target="_blank">Agent</a></li>
+	            </ul>
+	        </div>
+	    </div>
+	</li>
+	
+	<li class="yui3-menuitem item-menu item" id="aui_3_7_3_1_845" role="presentation"><a tabindex="-1"
+	                                                                                     class="yui3-menu-label yui3-menuitem-content"
+	                                                                                     id="yui3-3-1-0-1-135608018044463"
+	                                                                                     role="menuitem"
+	                                                                                     aria-haspopup="true"
+	                                                                                     aria-controls="aui_3_7_3_1_108"
+	                                                                                     style="font-weight: bold;"
+	                                                                                     href="https://policy.isb.az" target="_blank">İSB</a>
+	    <div class="yui3-menu yui3-menu-hidden" id="impl3" role="menu" aria-hidden="true"
+	         aria-labelledby="ms__id83863">
+	        <div class="yui3-menu-content" role="menuitem">
+	            <ul class="first-of-type" role="menuitem">
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      id="yui3-3-1-0-1-1356101534488472"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="https://registry.isb.az" target="_blank">İSB Register</a></li>
+	            </ul>
+	        </div>
+	    </div>
+	</li>
+	
+	<li class="yui3-menuitem item-menu item" id="aui_3_7_3_1_856" role="presentation"><a tabindex="-1"
+	                                                                                     class="yui3-menu-label yui3-menuitem-content"
+	                                                                                     id="yui3-3-1-0-1-135608018049940"
+	                                                                                     role="menuitem"
+	                                                                                     aria-haspopup="true"
+	                                                                                     aria-controls="aui_3_7_3_1_108"
+	                                                                                     style="font-weight: bold;"
+	                                                                                     href="https://front.azsigorta.az" target="_blank">InCore Front</a>
+	    <div class="yui3-menu yui3-menu-hidden" id="impl4" role="menu" aria-hidden="true"
+	         aria-labelledby="ms__id83863">
+	        <div class="yui3-menu-content" role="menuitem">
+	            <ul class="first-of-type" role="menuitem">
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      id="yui3-3-1-0-1-1356101534489401"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="http://blackwater.live.web.azinsurance.az" target="_blank">InCore Blackwater</a></li>
+	            </ul>
+	        </div>
+	    </div>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="yui3-menuitem item-menu item" id="yui3-3-1-0-1-1354538677947781" role="presentation"><a tabindex="-1"
+	                                                                                                   class="yui3-menu-label yui3-menuitem-content"
+	                                                                                                   id="yui3-3-1-0-1-1354538677947755"
+	                                                                                                   role="menuitem"
+	                                                                                                   aria-haspopup="true"
+	                                                                                                   aria-controls="aui_3_7_3_1_108"
+	                                                                                                   href="#comp">Portal</a>
+	    <div class="yui3-menu yui3-menu-hidden" id="comp" role="menu" aria-hidden="true"
+	         aria-labelledby="ms__id83850">
+	        <div class="yui3-menu-content" id="yui3-3-1-0-1-13590355104508160" role="presentation">
+	            <ul class="first-of-type" id="yui3-3-1-0-1-13590355104508159" role="presentation">
+	                <li class="yui3-menuitem item-menu item" id="yui3-3-1-0-1-1354538677947993" role="presentation">
+	                    <a class="yui3-menu-label yui3-menuitem-content" id="yui3-3-1-0-1-1354538677947989"
+	                       role="menuitem" aria-haspopup="true" aria-controls="aui_3_7_3_1_108"
+	                       href="#li_1354538683511-1">Səhifə nümunələri</a>
+	                    <div class="yui3-menu yui3-menu-hidden" id="li_1354538683511-1" role="menu"
+	                         aria-hidden="true" aria-labelledby="ms__id83852">
+	                        <div class="yui3-menu-content" role="presentation">
+	                            <ul class="first-of-type" role="presentation">
+	                                <li class="yui3-menuitem item" role="presentation"><a
+	                                        class="yui3-menuitem-content" id="yui3-3-1-0-1-1356101534482877"
+	                                        role="menuitem" aria-controls="aui_3_7_3_1_108" href="?id=3">Portal səhifəsi</a></li>
+	                                <li class="yui3-menuitem item" role="presentation"><a
+	                                        class="yui3-menuitem-content" id="yui3-3-1-0-1-1356101534482871"
+	                                        role="menuitem" aria-controls="aui_3_7_3_1_108" href="?id=4">Adi səhifə nümunəsi</a></li>
+	                                <li class="yui3-menuitem item" role="presentation"><a
+	                                        class="yui3-menuitem-content" role="menuitem"
+	                                        aria-controls="aui_3_7_3_1_108" href="?id=12">Şəkil ölçüsü</a></li>
+	                                <li class="yui3-menuitem item" role="presentation"><a
+	                                        class="yui3-menuitem-content" role="menuitem"
+	                                        aria-controls="aui_3_7_3_1_108" href="?id=14">Ölçülü Widgetlər</a></li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                </li>
+	                <li class="yui3-menuitem item-menu item" id="yui3-3-1-0-1-13607536533041025"
+	                    role="presentation"><a class="yui3-menu-label yui3-menuitem-content"
+	                                           id="yui3-3-1-0-1-13607536533041021" role="menuitem"
+	                                           aria-haspopup="true" aria-controls="aui_3_7_3_1_108"
+	                                           href="#li_1360753661138-1">Məqalələr (link)</a>
+	                    <div class="yui3-menu yui3-menu-hidden" id="li_1360753661138-1" role="menu"
+	                         aria-hidden="true" aria-labelledby="ms__id83857">
+	                        <div class="yui3-menu-content" role="presentation">
+	                            <ul class="first-of-type" role="presentation">
+	                                <li class="yui3-menuitem item" id="yui3-3-1-0-1-13656982572931173"
+	                                    role="presentation"><a class="yui3-menuitem-content"
+	                                                           id="yui3-3-1-0-1-13656982572931169" role="menuitem"
+	                                                           aria-controls="aui_3_7_3_1_108"
+	                                                           href="http://exxo.ru/intranet/articles/interactions/"
+	                                                           target="_blank">İntranet Portalda ümumi</a></li>
+	                                <li class="yui3-menuitem item" id="yui3-3-1-0-1-13607536533041730"
+	                                    role="presentation"><a class="yui3-menuitem-content"
+	                                                           id="yui3-3-1-0-1-13607536533041726" role="menuitem"
+	                                                           aria-controls="aui_3_7_3_1_108"
+	                                                           href="http://exxo.ru/intranet/articles/new-design1/"
+	                                                           target="_blank">Dizaynla əlaqədar bir daha</a></li>
+	                                <li class="yui3-menuitem item" id="yui3-3-1-0-1-13607539713651077"
+	                                    role="presentation"><a class="yui3-menuitem-content"
+	                                                           id="yui3-3-1-0-1-13607539713651073" role="menuitem"
+	                                                           aria-controls="aui_3_7_3_1_108"
+	                                                           href="http://exxo.ru/intranet/articles/tags-structure/"
+	                                                           target="_blank">Teq strukturu yaratmaq</a></li>
+	                                <li class="yui3-menuitem item" id="yui3-3-1-0-1-13607538291831070"
+	                                    role="presentation"><a class="yui3-menuitem-content"
+	                                                           id="yui3-3-1-0-1-13607538291831051" role="menuitem"
+	                                                           aria-controls="aui_3_7_3_1_108"
+	                                                           href="http://exxo.ru/intranet/articles/new-design/"
+	                                                           target="_blank">Görünüşünü 1 günə dizayn etmək</a></li>
+	                                <li class="yui3-menuitem item" id="yui3-3-1-0-1-13607545505561096"
+	                                    role="presentation"><a class="yui3-menuitem-content"
+	                                                           id="yui3-3-1-0-1-13607545505561092" role="menuitem"
+	                                                           aria-controls="aui_3_7_3_1_108"
+	                                                           href="http://exxo.ru/intranet/articles/tags/"
+	                                                           target="_blank">Məlumat bazası teqləri axtarın</a></li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	</li>
+	<li class="yui3-menuitem item-menu item" id="aui_3_7_3_1_855" role="presentation"><a tabindex="-1"
+	                                                                                     class="yui3-menu-label yui3-menuitem-content"
+	                                                                                     id="yui3-3-1-0-1-135608018003183"
+	                                                                                     role="menuitem"
+	                                                                                     aria-haspopup="true"
+	                                                                                     aria-controls="aui_3_7_3_1_108"
+	                                                                                     href="#impl">Məlumat rəhbəri</a>
+	    <div class="yui3-menu yui3-menu-hidden" id="impl" role="menu" aria-hidden="true"
+	         aria-labelledby="ms__id83863">
+	        <div class="yui3-menu-content" role="presentation">
+	            <ul class="first-of-type" role="presentation">
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      id="yui3-3-1-0-1-1356101534482802"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="territories.jsp">Fliallar</a></li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      id="yui3-3-1-0-1-1356101534482796"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="company.jsp">Təşkilati struktur</a>
+	                </li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      id="yui3-3-1-0-1-1356101534482790"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="empList.jsp">İşçi axtarışı</a>
+	                </li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="empListComp.jsp">Alt bölmə üzrə axtarış</a></li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="projects.jsp">Layihələr və qruplar</a>
+	                </li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="empPhoto.jsp">Şəkillər</a></li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="birthday.jsp">Ad günləri</a></li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="former.jsp">Köhnə əməkdaşlar</a>
+	                </li>
+	                <li class="yui3-menuitem item" id="aui_3_7_3_1_1495"><a class="yui3-menuitem-content"
+	                                                                        id="aui_3_7_3_1_1496"
+	                                                                        aria-controls="aui_3_7_3_1_108"
+	                                                                        href="roles.xhtml">İşçi rolları</a>
+	                </li>
+	                <li class="yui3-menuitem item" id="aui_3_7_3_1_2676"><a class="yui3-menuitem-content item-hover"
+	                                                                        id="aui_3_7_3_1_2677"
+	                                                                        aria-controls="aui_3_7_3_1_108"
+	                                                                        href="empRatings.xhtml">Kompetensiyaların siyahısı</a></li>
+	            </ul>
+	        </div>
+	    </div>
+	</li>
+	<li class="yui3-menuitem item-menu item" role="presentation"><a tabindex="-1"
+	                                                                class="yui3-menu-label yui3-menuitem-content"
+	                                                                id="yui3-3-1-0-1-135608018003186"
+	                                                                role="menuitem" aria-haspopup="true"
+	                                                                aria-controls="aui_3_7_3_1_108" href="#docs">Sənədlər</a>
+	    <div class="yui3-menu yui3-menu-hidden" id="docs" role="menu" aria-hidden="true"
+	         aria-labelledby="ms__id83872">
+	        <div class="yui3-menu-content" role="presentation">
+	            <ul class="first-of-type" role="presentation">
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="docClassic.jsp">Sənədlərim</a>
+	                </li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="newDoc.jsp">Yeni sənədlər</a></li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="newDocK.jsp">Şirkətdə yeni</a>
+	                </li>
+	                <li class="yui3-menuitem item-menu item" id="yui3-3-1-0-1-13445031453471110"
+	                    role="presentation"><a class="yui3-menu-label yui3-menuitem-content"
+	                                           id="yui3-3-1-0-1-135608018003189" role="menuitem"
+	                                           aria-haspopup="true" aria-controls="aui_3_7_3_1_108"
+	                                           href="#li_1344503173251-1">Şirkət sənədləri</a>
+	                    <div class="yui3-menu yui3-menu-hidden" id="li_1344503173251-1" role="menu"
+	                         aria-hidden="true" aria-labelledby="ms__id83876">
+	                        <div class="yui3-menu-content" role="presentation">
+	                            <ul class="first-of-type" role="presentation">
+	                                <li class="yui3-menuitem item" role="presentation"><a
+	                                        class="yui3-menuitem-content" role="menuitem"
+	                                        aria-controls="aui_3_7_3_1_108" href="docClassic.jsp?owner=-100">Ümumi sənədlər</a></li>
+	                                <li class="yui3-menuitem item" role="presentation"><a
+	                                        class="yui3-menuitem-content" role="menuitem"
+	                                        aria-controls="aui_3_7_3_1_108" href="docClassic.jsp?owner=-101">Gələnlər</a>
+	                                </li>
+	                                <li class="yui3-menuitem item" role="presentation"><a
+	                                        class="yui3-menuitem-content" role="menuitem"
+	                                        aria-controls="aui_3_7_3_1_108" href="docClassic.jsp?owner=-102">Gedənlər</a>
+	                                </li>
+	                                <li class="yui3-menuitem item" role="presentation"><a
+	                                        class="yui3-menuitem-content" role="menuitem"
+	                                        aria-controls="aui_3_7_3_1_108" href="docClassic.jsp?owner=-103">Daxili</a>
+	                                </li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	</li>
+	<li class="yui3-menuitem item-menu item" role="presentation"><a tabindex="-1"
+	                                                                class="yui3-menu-label yui3-menuitem-content"
+	                                                                id="yui3-3-1-0-1-135608018003192"
+	                                                                role="menuitem" aria-haspopup="true"
+	                                                                aria-controls="aui_3_7_3_1_108"
+	                                                                href="#li_1291481259516-10">Mesaj</a>
+	    <div class="yui3-menu yui3-menu-hidden" id="yui3-3-1-0-1-13560801800318162" role="menu" aria-hidden="true"
+	         aria-labelledby="ms__id83881">
+	        <div class="yui3-menu-content" role="presentation">
+	            <ul class="first-of-type" role="presentation">
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="blogInsert.jsp?r=1">Mesaj yaz</a></li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="blogs.jsp">Göndərilənlər</a></li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="newBlogs.jsp">Bütün gələnlər</a></li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="newBlogsB.jsp">Gələnlər</a>
+	                </li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="blogEditor.jsp">Qaralamalar</a></li>
+	            </ul>
+	        </div>
+	    </div>
+	</li>
+	<li class="yui3-menuitem item-menu item" role="presentation"><a tabindex="-1"
+	                                                                class="yui3-menu-label yui3-menuitem-content"
+	                                                                id="yui3-3-1-0-1-135608018003195"
+	                                                                role="menuitem" aria-haspopup="true"
+	                                                                aria-controls="aui_3_7_3_1_108" href="#res">Fotoalbom</a>
+	    <div class="yui3-menu yui3-menu-hidden" id="res" role="menu" aria-hidden="true"
+	         aria-labelledby="ms__id83887">
+	        <div class="yui3-menu-content" role="presentation">
+	            <ul class="first-of-type" role="presentation">
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="galClassic.jsp">Şəkillərim</a>
+	                </li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="galClassic.jsp?owner=-100">Ümumi fotoalbomlar</a></li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="newGalK.jsp">Şirkətdə yeni</a>
+	                </li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="newGal.jsp">Yeni fotoalbomlar</a>
+	                </li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="newPhotos.jsp">Yeni şəkillər</a>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	</li>
+	<li class="yui3-menuitem item-menu item" role="presentation"><a tabindex="-1"
+	                                                                class="yui3-menu-label yui3-menuitem-content"
+	                                                                id="yui3-3-1-0-1-135608018003198"
+	                                                                role="menuitem" aria-haspopup="true"
+	                                                                aria-controls="aui_3_7_3_1_108"
+	                                                                href="#li_1291481543693-10">Xidmətlər</a>
+	    <div class="yui3-menu yui3-menu-hidden" id="yui3-3-1-0-1-13560801800318163" role="menu" aria-hidden="true"
+	         aria-labelledby="ms__id83893">
+	        <div class="yui3-menu-content" role="presentation">
+	            <ul class="first-of-type" role="presentation">
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="services.jsp">Xidmətlərin siyahısı</a>
+	                </li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="jornal.jsp">Əməliyyatlar jurnalı</a></li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="myServices.jsp">Xidmətlərim</a></li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="servControl.jsp">Əməliyyatlara nəzarət</a></li>
+	            </ul>
+	        </div>
+	    </div>
+	</li>
+	<li class="yui3-menuitem item" role="presentation"><a tabindex="-1" class="yui3-menuitem-content"
+	                                                      id="yui3-3-1-0-1-1356080180031137" role="menuitem"
+	                                                      aria-controls="aui_3_7_3_1_108" href="resources.jsp">Resurslar</a>
+	</li>
+	<li class="yui3-menuitem item-menu item" role="presentation"><a tabindex="-1"
+	                                                                class="yui3-menu-label yui3-menuitem-content"
+	                                                                id="yui3-3-1-0-1-1356080180031101"
+	                                                                role="menuitem" aria-haspopup="true"
+	                                                                aria-controls="aui_3_7_3_1_108"
+	                                                                href="#li_1327225480085-1">Məlumat bazası</a>
+	    <div class="yui3-menu yui3-menu-hidden" id="li_1327225480085-1" role="menu" aria-hidden="true"
+	         aria-labelledby="ms__id83899">
+	        <div class="yui3-menu-content" role="presentation">
+	            <ul class="first-of-type" role="presentation">
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="findTag.jsp">Teq a görə axtarış</a></li>
+	                <li class="yui3-menuitem item" role="presentation"><a class="yui3-menuitem-content"
+	                                                                      role="menuitem"
+	                                                                      aria-controls="aui_3_7_3_1_108"
+	                                                                      href="tags.jsp">Redaktə</a></li>
+	            </ul>
+	        </div>
+	    </div>
+	</li>
+	<li class="yui3-menuitem item" role="presentation"><a tabindex="-1" class="yui3-menuitem-content"
+	                                                      id="yui3-3-1-0-1-1356080180031139" role="menuitem"
+	                                                      aria-controls="aui_3_7_3_1_108" href="news.jsp">Xəbərlər</a></li>
+	<li class="yui3-menuitem item" role="presentation"><a tabindex="-1" class="yui3-menuitem-content"
+	                                                      id="yui3-3-1-0-1-1356080180031141" role="menuitem"
+	                                                      aria-controls="aui_3_7_3_1_108" href="desk.jsp">Elanlar lövhəsi</a></li>
+	<li class="yui3-menuitem item" role="presentation"><a tabindex="-1" class="yui3-menuitem-content"
+	                                                      id="yui3-3-1-0-1-1356080180031143" role="menuitem"
+	                                                      aria-controls="aui_3_7_3_1_108" href="calendar.jsp">Kalendar</a></li>
+	<li class="yui3-menuitem item" id="yui3-3-1-0-1-13590355104508353" role="presentation"><a tabindex="-1"
+	                                                                                          class="yui3-menuitem-content"
+	                                                                                          id="yui3-3-1-0-1-1356080180031145"
+	                                                                                          role="menuitem"
+	                                                                                          aria-controls="aui_3_7_3_1_108"
+	                                                                                          href="votes.jsp">Səsvermə nəticələri</a>
+	</li>
+	</ul>
+	</div>";
+2018-08-13 13:32:37 GMT ERROR:  canceling statement due to user request
+2018-08-13 13:32:37 GMT STATEMENT:  SELECT * FROM public.gallaries
+	 ORDER BY id ASC, owner ASC LIMIT 100
+2018-08-13 13:32:51 GMT ERROR:  canceling statement due to user request
+2018-08-13 13:32:51 GMT STATEMENT:  SELECT * FROM public.gallaries
+	 ORDER BY id ASC, owner ASC LIMIT 100
+2018-08-13 13:34:10 GMT ERROR:  canceling statement due to user request
+2018-08-13 13:34:10 GMT STATEMENT:  SELECT * FROM public.file_store
+	 ORDER BY id ASC LIMIT 100
+2018-08-13 13:34:17 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-13 13:34:17 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-13 13:34:17 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-13 13:34:17 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-13 13:34:17 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	

@@ -1,0 +1,21 @@
+2018-04-20 13:58:50 GMT LOG:  database system was interrupted; last known up at 2018-04-18 16:08:16 GMT
+2018-04-20 13:58:51 GMT FATAL:  the database system is starting up
+2018-04-20 13:58:52 GMT FATAL:  the database system is starting up
+2018-04-20 13:58:53 GMT FATAL:  the database system is starting up
+2018-04-20 13:58:54 GMT FATAL:  the database system is starting up
+2018-04-20 13:58:55 GMT FATAL:  the database system is starting up
+2018-04-20 13:58:56 GMT FATAL:  the database system is starting up
+2018-04-20 13:58:57 GMT FATAL:  the database system is starting up
+2018-04-20 13:58:59 GMT FATAL:  the database system is starting up
+2018-04-20 13:59:00 GMT FATAL:  the database system is starting up
+2018-04-20 13:59:01 GMT FATAL:  the database system is starting up
+2018-04-20 13:59:02 GMT FATAL:  the database system is starting up
+2018-04-20 13:59:03 GMT LOG:  database system was not properly shut down; automatic recovery in progress
+2018-04-20 13:59:03 GMT LOG:  invalid record length at 0/E3E36A8
+2018-04-20 13:59:03 GMT LOG:  redo is not required
+2018-04-20 13:59:03 GMT FATAL:  the database system is starting up
+2018-04-20 13:59:03 GMT LOG:  MultiXact member wraparound protections are now enabled
+2018-04-20 13:59:03 GMT LOG:  autovacuum launcher started
+2018-04-20 13:59:03 GMT LOG:  database system is ready to accept connections
+2018-04-20 15:34:37 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Avtorizasiya</title>
+        #{update.update()}
+        <style type='text/css'>
+            body {background-color:white;  text-align: center;font-size: 11px; font-family: Arial, Helvetica, sans-serif;line-height: normal;}
+            #f {background-color: white; padding:30px; width: 350px; margin: 50px auto; display: block; border: 1px solid #bfbfbf;
+                border-bottom-color: #bfbfbf; box-shadow: 0 4px 15px #BFBFBF; border-radius: 6px; background-image: url('back.png'); background-position: top; background-repeat: repeat-x;}
+            input[type=text], input[type=password] {width: 180px;} 
+            .in { border: 1px solid #bfbfbf; padding: 3px; color: black; border-radius: 4px; text-align: center; font-size: 14px; }
+            .in:hover {border: 1px solid #972626; color:#972626;}
+            #f td {padding: 12px 0px;}
+            #f table {margin-bottom: 5px; width:100%;}
+            td.one {text-align: left; padding-right: 10px; font-size: 14px; color: #8C8E94; font-weight: normal;}
+            #f td.two {text-align: left; padding-left: 40px;}
+            td.change {font-size: 11px; font-weight: normal;}
+            #but a {color: #bfbfbf; text-decoration: none;}
+            #but {text-align: right;}
+            #but a:hover {text-decoration: underline; color: #972626; }
+            input[type=submit] {cursor: pointer; padding: 5px 20px; font-size: 14px;}
+        </style>
+    </h:head>
+    <h:body><div id='f'>#{indexBean.getMassage()}
+			<table style="width: 100%; height: 100px;">
+				<tr valign="middle">
+					<td align="center">
+						<img src="logo.png" id="logo" style="width: 250px;"/>
+					</td>
+				</tr>
+			</table>
+            <h:form id="form"><table><tr><td class='one'>istifadəçi adı</td><td class='two'>
+                            <h:inputText id="login" label="istifadəçi adı" required="true" value="#{indexBean.user}"  styleClass="in username"/></td></tr><tr><td class='one'>şifrə</td><td class='two'>
+                            <h:inputSecret id="pass" label="şifrə" required="true" value="#{indexBean.pass}"  styleClass="in password"/></td></tr>   
+                    
+                    <tr><td class='one change'>Dəyişdir</td><td class='two'><h:selectBooleanCheckbox id="change" label="chane" value="#{indexBean.change}" /></td></tr></table>
+                <h:commandButton id="submit" value="Daxil ol" action="index.xhtml" actionListener="#{indexBean.log()}" />
+                #{indexBean.setMassage()}
+            </h:form><br/>
+            <h:form id="g">
+                <h:commandButton id="guest" value="Qonaq kimi daxil ol" action="index.xhtml" 
+                                 actionListener="#{indexBean.logGuest()}" rendered="#{indexBean.isGuest()}" />
+
+            </h:form>
+            <div id="but">
+                <h:link outcome="start.xhtml" rendered="${indexBean.startRedirect()}" value="Qeydiyyatdan keç" /></div>
+        </div>
+    </h:body>
+</html>

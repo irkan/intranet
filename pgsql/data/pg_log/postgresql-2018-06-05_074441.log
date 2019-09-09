@@ -1,0 +1,16 @@
+2018-06-05 07:44:41 GMT LOG:  database system was shut down at 2018-06-05 07:44:38 GMT
+2018-06-05 07:44:41 GMT LOG:  MultiXact member wraparound protections are now enabled
+2018-06-05 07:44:41 GMT LOG:  database system is ready to accept connections
+2018-06-05 07:44:41 GMT LOG:  autovacuum launcher started
+2018-06-05 13:55:20 GMT ERROR:  duplicate key value violates unique constraint "found_tags_pkey"
+2018-06-05 13:55:20 GMT DETAIL:  Key (owner, tag_id)=(1, 17) already exists.
+2018-06-05 13:55:20 GMT STATEMENT:  INSERT INTO found_tags VALUES ('1','17', '1')
+2018-06-05 13:55:21 GMT ERROR:  duplicate key value violates unique constraint "found_tags_pkey"
+2018-06-05 13:55:21 GMT DETAIL:  Key (owner, tag_id)=(1, 17) already exists.
+2018-06-05 13:55:21 GMT STATEMENT:  INSERT INTO found_tags VALUES ('1','17', '1')
+2018-06-05 13:55:21 GMT ERROR:  duplicate key value violates unique constraint "found_tags_pkey"
+2018-06-05 13:55:21 GMT DETAIL:  Key (owner, tag_id)=(1, 17) already exists.
+2018-06-05 13:55:21 GMT STATEMENT:  INSERT INTO found_tags VALUES ('1','17', '1')
+2018-06-05 13:55:22 GMT ERROR:  duplicate key value violates unique constraint "found_tags_pkey"
+2018-06-05 13:55:22 GMT DETAIL:  Key (owner, tag_id)=(1, 17) already exists.
+2018-06-05 13:55:22 GMT STATEMENT:  INSERT INTO found_tags VALUES ('1','17', '1')

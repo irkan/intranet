@@ -1,0 +1,27 @@
+2018-12-18 05:49:56 GMT LOG:  autovacuum launcher process (PID 2256) was terminated by exception 0xC000013A
+2018-12-18 05:49:56 GMT HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2018-12-18 05:49:56 GMT LOG:  terminating any other active server processes
+2018-12-18 05:49:56 GMT LOG:  all server processes terminated; reinitializing
+2018-12-18 05:49:57 GMT LOG:  database system was interrupted; last known up at 2018-12-18 05:37:31 GMT
+2018-12-18 05:49:58 GMT LOG:  database system was not properly shut down; automatic recovery in progress
+2018-12-18 05:49:58 GMT LOG:  invalid record length at 0/129248F0
+2018-12-18 05:49:58 GMT LOG:  redo is not required
+2018-12-18 05:49:58 GMT LOG:  MultiXact member wraparound protections are now enabled
+2018-12-18 05:49:58 GMT LOG:  database system is ready to accept connections
+2018-12-18 05:49:58 GMT LOG:  autovacuum launcher started
+2018-12-18 05:49:58 GMT LOG:  statistics collector process (PID 3380) was terminated by exception 0xC000013A
+2018-12-18 05:49:58 GMT HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2018-12-18 05:49:58 GMT LOG:  autovacuum launcher process (PID 4332) was terminated by exception 0xC000013A
+2018-12-18 05:49:58 GMT HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2018-12-18 05:49:58 GMT LOG:  terminating any other active server processes
+2018-12-18 05:49:58 GMT LOG:  all server processes terminated; reinitializing
+2018-12-18 05:49:58 GMT LOG:  database system was interrupted; last known up at 2018-12-18 05:49:58 GMT
+2018-12-18 05:49:58 GMT LOG:  database system was not properly shut down; automatic recovery in progress
+2018-12-18 05:49:58 GMT LOG:  invalid record length at 0/12924960
+2018-12-18 05:49:58 GMT LOG:  redo is not required
+2018-12-18 05:49:58 GMT LOG:  MultiXact member wraparound protections are now enabled
+2018-12-18 05:49:58 GMT LOG:  database system is ready to accept connections
+2018-12-18 05:49:58 GMT LOG:  autovacuum launcher started
+2018-12-18 05:50:01 GMT LOG:  autovacuum launcher process (PID 4932) was terminated by exception 0xC000013A
+2018-12-18 05:50:01 GMT HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2018-12-18 05:50:01 GMT LOG:  terminating any other active server processes

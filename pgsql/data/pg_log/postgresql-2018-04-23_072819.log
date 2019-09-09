@@ -1,0 +1,23 @@
+2018-04-23 07:28:19 GMT LOG:  database system was shut down at 2018-04-23 07:27:40 GMT
+2018-04-23 07:28:19 GMT LOG:  MultiXact member wraparound protections are now enabled
+2018-04-23 07:28:19 GMT LOG:  database system is ready to accept connections
+2018-04-23 07:28:19 GMT LOG:  autovacuum launcher started
+2018-04-23 07:38:56 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-04-23 07:38:56 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-04-23 07:38:56 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-04-23 07:38:56 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-04-23 07:38:56 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-04-23 07:38:56 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-04-23 07:38:58 GMT LOG:  received fast shutdown request
+2018-04-23 07:38:58 GMT LOG:  aborting any active transactions
+2018-04-23 07:38:58 GMT LOG:  autovacuum launcher shutting down
+2018-04-23 07:38:58 GMT ERROR:  canceling statement due to user request
+2018-04-23 07:38:58 GMT LOG:  autovacuum launcher shutting down
+2018-04-23 07:38:58 GMT LOG:  shutting down
+2018-04-23 07:38:58 GMT LOG:  database system is shut down

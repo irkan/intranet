@@ -1,0 +1,64 @@
+2018-04-21 12:18:56 GMT LOG:  database system was interrupted; last known up at 2018-04-20 13:59:03 GMT
+2018-04-21 12:18:56 GMT FATAL:  the database system is starting up
+2018-04-21 12:18:57 GMT FATAL:  the database system is starting up
+2018-04-21 12:18:59 GMT FATAL:  the database system is starting up
+2018-04-21 12:19:00 GMT FATAL:  the database system is starting up
+2018-04-21 12:19:01 GMT FATAL:  the database system is starting up
+2018-04-21 12:19:02 GMT FATAL:  the database system is starting up
+2018-04-21 12:19:03 GMT FATAL:  the database system is starting up
+2018-04-21 12:19:04 GMT FATAL:  the database system is starting up
+2018-04-21 12:19:05 GMT FATAL:  the database system is starting up
+2018-04-21 12:19:06 GMT FATAL:  the database system is starting up
+2018-04-21 12:19:07 GMT FATAL:  the database system is starting up
+2018-04-21 12:19:08 GMT FATAL:  the database system is starting up
+2018-04-21 12:19:09 GMT FATAL:  the database system is starting up
+2018-04-21 12:19:10 GMT FATAL:  the database system is starting up
+2018-04-21 12:19:11 GMT FATAL:  the database system is starting up
+2018-04-21 12:19:13 GMT FATAL:  the database system is starting up
+2018-04-21 12:19:14 GMT FATAL:  the database system is starting up
+2018-04-21 12:19:15 GMT FATAL:  the database system is starting up
+2018-04-21 12:19:16 GMT FATAL:  the database system is starting up
+2018-04-21 12:19:16 GMT LOG:  database system was not properly shut down; automatic recovery in progress
+2018-04-21 12:19:16 GMT LOG:  invalid record length at 0/E3E3718
+2018-04-21 12:19:16 GMT LOG:  redo is not required
+2018-04-21 12:19:16 GMT LOG:  MultiXact member wraparound protections are now enabled
+2018-04-21 12:19:17 GMT LOG:  database system is ready to accept connections
+2018-04-21 12:19:17 GMT LOG:  autovacuum launcher started
+2018-04-21 12:28:22 GMT ERROR:  null value in column "user_id" violates not-null constraint
+2018-04-21 12:28:22 GMT DETAIL:  Failing row contains (43, null, null).
+2018-04-21 12:28:22 GMT STATEMENT:  INSERT INTO public.answers(quest_id) VALUES ('43'::integer)
+2018-04-21 12:51:40 GMT ERROR:  invalid input syntax for integer: "
+	"Вы, Николай Николаевич, талант свой в землю зарываете :)"" at character 43
+2018-04-21 12:51:40 GMT STATEMENT:  INSERT INTO public.picsc(pics_id) VALUES ('
+	"Вы, Николай Николаевич, талант свой в землю зарываете :)"'::integer)
+2018-04-21 12:51:42 GMT ERROR:  invalid input syntax for integer: "
+	"Вы, Николай Николаевич, талант свой в землю зарываете :)"" at character 43
+2018-04-21 12:51:42 GMT STATEMENT:  INSERT INTO public.picsc(pics_id) VALUES ('
+	"Вы, Николай Николаевич, талант свой в землю зарываете :)"'::integer)
+2018-04-21 12:51:44 GMT ERROR:  invalid input syntax for integer: "
+	"Вы, Николай Николаевич, талант свой в землю зарываете :)"" at character 43
+2018-04-21 12:51:44 GMT STATEMENT:  INSERT INTO public.picsc(pics_id) VALUES ('
+	"Вы, Николай Николаевич, талант свой в землю зарываете :)"'::integer)
+2018-04-21 13:22:56 GMT ERROR:  syntax error at or near "=" at character 23
+2018-04-21 13:22:56 GMT STATEMENT:  update set description='İstifadə edilmir' where name='portal_admin'
+2018-04-21 13:23:02 GMT ERROR:  syntax error at or near "=" at character 23
+2018-04-21 13:23:02 GMT STATEMENT:  update set description='İstifadə edilmir' where name='portal_admin'
+2018-04-21 14:18:01 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-04-21 14:18:01 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-04-21 14:31:40 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-04-21 14:31:40 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-04-21 14:31:40 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-04-21 14:31:40 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-04-21 14:40:21 GMT LOG:  received fast shutdown request
+2018-04-21 14:40:21 GMT LOG:  aborting any active transactions
+2018-04-21 14:40:21 GMT LOG:  autovacuum launcher shutting down
+2018-04-21 14:40:21 GMT ERROR:  canceling statement due to user request
+2018-04-21 14:40:21 GMT LOG:  autovacuum launcher shutting down
+2018-04-21 14:40:21 GMT LOG:  shutting down
+2018-04-21 14:40:21 GMT LOG:  database system is shut down

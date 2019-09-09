@@ -1,0 +1,85 @@
+<ui:composition  xmlns="http://www.w3.org/1999/xhtml" 
+                 xmlns:h="http://xmlns.jcp.org/jsf/html"
+                 xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                 xmlns:EXXO-START="http://xmlns.jcp.org/jsf/composite/EXXO-START"
+                 template="./mainTemplate.xhtml" 
+                 xmlns:f="http://xmlns.jcp.org/jsf/core"
+                 xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <ui:define name="top">
+        <EXXO-START:top-menu page="insert-class"></EXXO-START:top-menu>
+    </ui:define>
+    <ui:define name="head">
+        <EXXO-START:head title="İşçi daxil edin"></EXXO-START:head>
+    </ui:define>
+    <ui:define name="head-bot">
+        <meta http-equiv="expires" content="0" />
+        <meta http-equiv="pragma" content="no-cache" />
+    </ui:define>
+    <ui:define name="content">
+        #{empBean.initParams()}
+        <h:outputStylesheet library="css" name="emp.css"></h:outputStylesheet>
+        <div id="exxo-start-ins">
+            <h:form id="emp" prependId="false" enctype="multipart/form-data">
+                <h:panelGrid columns="2" columnClasses="left, right" id="formGrid">
+                    <h:outputLabel for="fio" class="str">Soyad Ad Ata adı</h:outputLabel><h:inputText id="fio" value="#{empBean.emp.fio}" class="aui-field-required"></h:inputText>
+                    <h:outputLabel for="file">Şəkil</h:outputLabel><h:panelGroup rendered="#{not photoBean.photo}">
+                        <h:inputFile id="file" value="#{empBean.file}"></h:inputFile>
+                    </h:panelGroup>
+                    <h:panelGroup rendered="#{photoBean.photo}">
+                        <img src="preImgLoader" /><br />
+                        <a href="DropPhoto">Şəkili sil</a>
+                    </h:panelGroup>
+                    <h:outputLabel id="birthdayLabel" class="str">Doğum günü</h:outputLabel>
+                    <h:panelGroup>
+                        <div id="dateSelected">Doğum gününü seçin!</div>
+                        <EXXO-START:date-picker dayScript="#{empBean.birthdayScript}" dayString="#{empBean.birthdayString}" yearInterval="-30"
+                                                target="#dateSelected" nodeId="birth" yearRange="[1935, Year-12]"></EXXO-START:date-picker>
+                    </h:panelGroup>
+                    <h:outputLabel>İşə qəbul tarixi</h:outputLabel>
+                    <h:panelGroup>
+                        <div id="workDateSelected">İşə qəbul tarixini göstərin!</div>
+                        <EXXO-START:date-picker dayScript="#{empBean.workScript}" dayString="#{empBean.workString}" 
+                                                target="#workDateSelected" nodeId="work" yearRange="[Year-50, Year]" inputClass=""></EXXO-START:date-picker>   
+                    </h:panelGroup>
+                    <h:outputLabel for="units" class="str">Alt bölmə</h:outputLabel>
+                    <h:panelGroup id="unitBlock">
+                        <h:inputText value="#{empBean.emp.unit}" id="units" style="display: none;"></h:inputText>
+                        <h:inputHidden id='supervizor' value="${empBean.supervizor}"></h:inputHidden>
+                        <span id="unit">#{empBean.supervizor}</span>
+                    </h:panelGroup>
+                    <h:outputLabel for="position" class="str">Vəzifə</h:outputLabel><h:inputText id="position" value="#{empBean.emp.position}" class="aui-field-required"></h:inputText>
+                    <h:outputLabel>Rəhbər alt bölmə</h:outputLabel><h:selectBooleanCheckbox value="#{empBean.emp.head}"></h:selectBooleanCheckbox>
+                    <h:outputLabel>Öhdəliklər</h:outputLabel><h:inputTextarea value="#{empBean.emp.responsibility}"></h:inputTextarea>
+                    <h:outputLabel>Təhsil</h:outputLabel><h:inputTextarea value="#{empBean.emp.education}"></h:inputTextarea>
+                    <h:outputLabel>Flial</h:outputLabel><h:selectOneMenu value="#{empBean.emp.office}">
+                        <f:selectItems value="#{empBean.office.options}"></f:selectItems>
+                    </h:selectOneMenu>
+                    <h:outputLabel>Otaq</h:outputLabel><h:inputText value="#{empBean.emp.room}"></h:inputText>
+                    <h:outputLabel>Telefon şəhər</h:outputLabel><h:inputText value="#{empBean.emp.tel}"></h:inputText>
+                    <h:outputLabel>Telefon daxili</h:outputLabel><h:inputText value="#{empBean.emp.tellocal}"></h:inputText>
+                    <h:outputLabel>Telefon mobil</h:outputLabel><h:inputText value="#{empBean.emp.tellmob}"></h:inputText>
+                    <h:outputLabel>Email</h:outputLabel><h:inputText value="#{empBean.emp.email}" class="aui-field-email"></h:inputText>
+                </h:panelGrid>
+                <div id='messages'><h:messages></h:messages></div>
+                <h:panelGrid columns="2" id="butTable">
+                    <h:commandButton action="emp" value="Обновить" rendered="#{empBean.edit}"></h:commandButton>
+                    <h:commandButton action="photo" value="Növbəti" actionListener="#{empBean.loadImg()}" id="save" rendered="#{not photoBean.photo}" class="aui-button-input"></h:commandButton>
+                    <h:commandButton action="photo" value="Növbəti" actionListener="#{empBean.updateBirthday()}" rendered="#{photoBean.photo}" class="aui-button-input"></h:commandButton>
+                </h:panelGrid>
+            </h:form>  
+        </div>
+    </ui:define>
+    <ui:define name="container">
+        <EXXO-START:fx-element elementId="moveMain" trigger="#unit" targetId="comp" autoSize="autosize" triggerEvent="closeEvent"></EXXO-START:fx-element>
+        <div class="exxo-target-container">
+
+            <div id="comp"><h:outputFormat value="{0}" escape="false">
+                    <f:param value="#{company.company.company}" />
+                </h:outputFormat></div>
+
+        </div>
+        <h:outputScript library="scripts" name="emp.js" target="body"></h:outputScript>
+        <h:outputScript library="scripts" name="emp-validate.js" target="body" rendered="#{not photoBean.photo}"></h:outputScript>
+        <h:outputScript library="scripts" name="emp-validate1.js" target="body" rendered="#{photoBean.photo}"></h:outputScript>
+    </ui:define>
+</ui:composition>

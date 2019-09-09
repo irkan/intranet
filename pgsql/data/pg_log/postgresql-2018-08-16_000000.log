@@ -1,0 +1,37 @@
+2018-08-16 05:57:17 GMT ERROR:  relation "register" already exists
+2018-08-16 05:57:17 GMT STATEMENT:  create table register ( key varchar(250) not null,  reg varchar(250) not null,  primary key (key))
+2018-08-16 06:04:41 GMT ERROR:  null value in column "pass" violates not-null constraint
+2018-08-16 06:04:41 GMT DETAIL:  Failing row contains (46, alagez, null).
+2018-08-16 06:04:41 GMT STATEMENT:  INSERT INTO public.users(id, login) VALUES ('46'::integer, 'alagez'::character varying(250))
+2018-08-16 06:25:24 GMT ERROR:  null value in column "pass" violates not-null constraint
+2018-08-16 06:25:24 GMT DETAIL:  Failing row contains (46, alagez, null).
+2018-08-16 06:25:24 GMT STATEMENT:  INSERT INTO public.users(id, login) VALUES ('46'::integer, 'alagez'::character varying(250))
+2018-08-16 07:36:54 GMT LOG:  server process (PID 4956) was terminated by exception 0xC000013A
+2018-08-16 07:36:54 GMT DETAIL:  Failed process was running: SELECT format_type(oid,NULL) as typname FROM pg_type WHERE oid = 1043
+2018-08-16 07:36:54 GMT HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2018-08-16 07:36:54 GMT LOG:  terminating any other active server processes
+2018-08-16 07:36:54 GMT WARNING:  terminating connection because of crash of another server process
+2018-08-16 07:36:54 GMT DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2018-08-16 07:36:54 GMT HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2018-08-16 07:36:54 GMT WARNING:  terminating connection because of crash of another server process
+2018-08-16 07:36:54 GMT DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2018-08-16 07:36:54 GMT HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2018-08-16 07:36:54 GMT WARNING:  terminating connection because of crash of another server process
+2018-08-16 07:36:54 GMT DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2018-08-16 07:36:54 GMT HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2018-08-16 07:36:54 GMT WARNING:  terminating connection because of crash of another server process
+2018-08-16 07:36:54 GMT DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2018-08-16 07:36:54 GMT HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2018-08-16 07:36:54 GMT LOG:  all server processes terminated; reinitializing
+2018-08-16 07:36:54 GMT LOG:  database system was interrupted; last known up at 2018-08-16 07:29:01 GMT
+2018-08-16 07:36:54 GMT LOG:  database system was not properly shut down; automatic recovery in progress
+2018-08-16 07:36:54 GMT LOG:  invalid record length at 0/115E82B8
+2018-08-16 07:36:54 GMT LOG:  redo is not required
+2018-08-16 07:36:54 GMT LOG:  MultiXact member wraparound protections are now enabled
+2018-08-16 07:36:54 GMT LOG:  database system is ready to accept connections
+2018-08-16 07:36:54 GMT LOG:  autovacuum launcher started
+2018-08-16 07:36:55 GMT LOG:  statistics collector process (PID 3408) was terminated by exception 0xC000013A
+2018-08-16 07:36:55 GMT HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2018-08-16 07:36:55 GMT LOG:  autovacuum launcher process (PID 3716) was terminated by exception 0xC000013A
+2018-08-16 07:36:55 GMT HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2018-08-16 07:36:55 GMT LOG:  terminating any other active server processes

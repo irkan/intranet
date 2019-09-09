@@ -1,0 +1,34 @@
+2018-08-20 10:28:30 GMT LOG:  database system was interrupted; last known up at 2018-08-20 09:17:00 GMT
+2018-08-20 10:28:30 GMT LOG:  database system was not properly shut down; automatic recovery in progress
+2018-08-20 10:28:30 GMT LOG:  invalid record length at 0/11A78BA0
+2018-08-20 10:28:30 GMT LOG:  redo is not required
+2018-08-20 10:28:30 GMT LOG:  MultiXact member wraparound protections are now enabled
+2018-08-20 10:28:30 GMT LOG:  database system is ready to accept connections
+2018-08-20 10:28:30 GMT LOG:  autovacuum launcher started
+2018-08-20 10:50:53 GMT ERROR:  more than one row returned by a subquery used as an expression
+2018-08-20 10:50:53 GMT CONTEXT:  SQL statement "SELECT (SELECT id FROM employee WHERE head=1 AND unit=u)"
+	PL/pgSQL function isboss(integer,integer) line 1 at assignment
+	SQL statement "SELECT NOT isBoss(emp,(SELECT id FROM employee WHERE global_id=u)) AND NOT isGroupBoss(get_global(emp), u) AND NOT isProjectBoss(get_global(emp), u)"
+	PL/pgSQL function issignable(integer,integer,integer[],integer) line 1 at IF
+2018-08-20 10:50:53 GMT STATEMENT:  SELECT files.id, files.owner, files.name, get_fio(files.owner), files.fname, files.descr, isBlogPermitted (dopusk_type, dopusk, 724::Int) AS permitted, type, properTime(files.created) AS create, files.superior AS superior,  catalog_name(superior),dopusk_type,sizeico, dopusk, vers, properTime(files_vers.created) AS versCreated, ver_id, status, step, files.id = files.copy AS isCopy, copy,isSignable(files.id,dopusk_type,dopusk,owner) AS isSignable, isSignedBy(ver_id,46) AS isSigned, author, get_fio(author) AS author_fio, author is not null AS has_author, isHead(files.owner) AS isHead FROM files, files_vers WHERE file='1' AND files.copy=files_vers.id  AND files.id='273'  ORDER BY files_vers.created DESC LIMIT 1
+2018-08-20 13:25:48 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 13:25:48 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 13:25:48 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 13:25:48 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 13:25:48 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 13:25:48 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 13:25:48 GMT LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-08-20 13:25:52 GMT LOG:  received fast shutdown request
+2018-08-20 13:25:52 GMT LOG:  aborting any active transactions
+2018-08-20 13:25:52 GMT LOG:  autovacuum launcher shutting down
+2018-08-20 13:25:52 GMT ERROR:  canceling statement due to user request
+2018-08-20 13:25:52 GMT LOG:  autovacuum launcher shutting down
+2018-08-20 13:25:52 GMT LOG:  shutting down
+2018-08-20 13:25:52 GMT LOG:  database system is shut down
